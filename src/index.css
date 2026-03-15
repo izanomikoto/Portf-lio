@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Montserrat:wght@300;400;600&display=swap');
+
+:root {
+  /* Shamayin Core Tokens */
+  --color-vilon: #00d4ff;
+  --color-rakia: #38bdf8;
+  --color-zebul: #f59e0b;
+  --color-background: #000000;
+  --color-foreground: #f5f5f7;
+  --color-glass: rgba(10, 10, 10, 0.7);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+  --color-soul-spark: #ffffff;
+  
+  --font-serif: 'Cinzel', serif;
+  --font-sans: 'Montserrat', sans-serif;
+  
+  --shadow-divine: 0 0 20px rgba(0, 212, 255, 0.3);
+  --transition-smooth: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: var(--color-glass);
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  border: 1px solid var(--color-glass-border);
+  border-radius: 2px;
+}
+
+/* Typography styles */
+.text-lore {
+  font-family: var(--font-serif);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #d4af37, #f3e5ab, #d4af37);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #00d4ff, #38bdf8);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Layout utilities */
+.ether-lens-container {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-vilon);
+  border-radius: 2px;
+}
