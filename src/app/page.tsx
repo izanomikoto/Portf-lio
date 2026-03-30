@@ -11,12 +11,12 @@ import {
 const projects = [
   {
     id: "shamayin",
-    title: "Shamayin",
+    title: "Crônicas de Shamayin",
     subtitle: "RPG Fusão Hebraico-Asiático",
     description: "Sistema RPG de alta fidelidade combinando misticismo hebraico com precisão asiática. Shell nativo Unity 6 com portal web Next.js. Sistemas distribuídos, sincronização em tempo real e construção de mundos 3D imersivos.",
     tags: ["Unity 6", "C#", ".NET 9", "Next.js 16", "PostgreSQL", "Redis"],
-    year: "2024",
-    role: "Arquiteto Principal",
+    year: "2025",
+    role: "CEO - Arquiteto Principal",
     icon: Layers,
     featured: true,
     stats: [
@@ -32,7 +32,7 @@ const projects = [
     subtitle: "App de Japonês",
     description: "Aplicativo nativo macOS para aprendizado de japonês com Sistema de Repetição Espaçada (SRS). Gamificação XP, múltiplos perfis com proteção PIN, sessões Pomodoro e interface multilíngue.",
     tags: ["SwiftUI", "SwiftData", "macOS 14+", "SRS Algorithm", "Xcode"],
-    year: "2024",
+    year: "2026",
     role: "Criador",
     icon: Globe,
     featured: false,
@@ -49,7 +49,7 @@ const projects = [
     subtitle: "Estação de Voz IA",
     description: "Estação de trabalho musical macOS profissional para treinar modelos de voz personalizados. Integração RVC, ferramentas de preparação de datasets e interface SwiftUI nativa.",
     tags: ["SwiftUI", "Python/RVC", "ffmpeg", "Audio Processing", "macOS"],
-    year: "2023",
+    year: "2026",
     role: "Criador",
     icon: Music4,
     featured: false,
@@ -178,7 +178,7 @@ export default function Home() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-apple-surface border border-apple-border text-sm text-apple-text-secondary mb-8"
           >
             <Sparkles size={14} className="text-apple-accent" />
-            <span>Arquiteto de Software & Desenvolvedor</span>
+            <span>Engenheiro de Software & Desenvolvedor</span>
           </motion.div>
 
           <motion.h1
@@ -198,9 +198,9 @@ export default function Home() {
             transition={{ delay: 0.5 }}
             className="text-lg text-apple-text-secondary max-w-2xl mx-auto mb-10 leading-relaxed"
           >
-            De sistemas de jogos AAA a aplicativos macOS nativos. 
+            De sistemas de jogos a aplicativos macOS nativos. 
             Desenvolvo soluções elegantes que combinam excelência técnica 
-            com design beautiful.
+            com design intuitivo e leve.
           </motion.p>
 
           <motion.div
@@ -395,14 +395,15 @@ export default function Home() {
           >
             <h2 className="text-3xl md:text-4xl font-semibold mb-8">Sobre Mim</h2>
             <p className="text-lg text-apple-text-secondary leading-relaxed mb-6">
-              Sou arquiteto e desenvolvedor de software com paixão por criar 
+              Olá! Me chamo, Vinicius ou Izano no mundo das stacks.
+              Sou engenheiro de software e desenvolvedor com paixão por criar 
               experiências digitais imersivas. Meu trabalho está na interseção entre 
               desenvolvimento de jogos, aplicativos nativos e sistemas escaláveis.
             </p>
             <p className="text-lg text-apple-text-secondary leading-relaxed">
               De arquitetura de sistemas de jogos distribuídos em Unity à criação de 
               elegantes aplicativos macOS com SwiftUI, acredito no poder de combinar 
-              excelência técnica com design beautiful.
+              excelência técnica com design bonito, leve e escalável.
             </p>
           </motion.div>
         </div>
@@ -416,7 +417,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4">Vamos Conectar</h2>
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4">Vamos nos Conectar</h2>
             <p className="text-apple-text-secondary mb-10">
               Interessado em trabalhar junto ou quer apenas conversar? 
               Me encontre nas plataformas abaixo.
