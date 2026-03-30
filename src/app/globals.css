@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --apple-bg: #000000;
+  --apple-surface: #0a0a0a;
+  --apple-surface-hover: #1a1a1a;
+  --apple-border: #2a2a2a;
+  --apple-text: #f5f5f7;
+  --apple-text-secondary: #a1a1a6;
+  --apple-text-tertiary: #6e6e73;
+  --apple-accent: #0071e3;
+  --apple-accent-hover: #0077ed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--apple-bg);
+  color: var(--apple-text);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: rgba(0, 113, 227, 0.3);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bg-apple-bg { background-color: var(--apple-bg); }
+.bg-apple-surface { background-color: var(--apple-surface); }
+.bg-apple-surface-hover { background-color: var(--apple-surface-hover); }
+.bg-apple-accent { background-color: var(--apple-accent); }
+.bg-apple-accent-hover { background-color: var(--apple-accent-hover); }
+
+.text-apple-text { color: var(--apple-text); }
+.text-apple-text-secondary { color: var(--apple-text-secondary); }
+.text-apple-text-tertiary { color: var(--apple-text-tertiary); }
+.text-apple-accent { color: var(--apple-accent); }
+
+.border-apple-border { border-color: var(--apple-border); }
+
+.hover\:bg-apple-surface:hover { background-color: var(--apple-surface); }
+.hover\:bg-apple-accent-hover:hover { background-color: var(--apple-accent-hover); }
+.hover\:text-apple-text:hover { color: var(--apple-text); }
+.hover\:text-apple-accent:hover { color: var(--apple-accent); }
+.hover\:border-apple-accent:hover { border-color: var(--apple-accent); }
+
+.group:hover .group-hover\:text-apple-accent { color: var(--apple-accent); }
