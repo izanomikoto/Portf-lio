@@ -5,7 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { 
   Menu, X, Github, Linkedin, Mail, ExternalLink, 
   ChevronDown, Sparkles, Layers, Code2, Music4, 
-  Globe, Smartphone, Monitor
+  Globe, Smartphone, Monitor,
+  Lightbulb
 } from "lucide-react";
 
 const projects = [
@@ -177,7 +178,7 @@ export default function Home() {
             transition={{ delay: 0.2 }}
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-apple-surface border border-apple-border text-sm text-apple-text-secondary mb-8"
           >
-            <Sparkles size={14} className="text-apple-accent" />
+            <Lightbulb size={14} className="text-apple-accent" />
             <span>Engenheiro de Software & Desenvolvedor</span>
           </motion.div>
 
@@ -431,7 +432,7 @@ export default function Home() {
           >
             <h2 className="text-3xl md:text-4xl font-semibold mb-4">Vamos nos Conectar</h2>
             <p className="text-apple-text-secondary mb-10">
-              Interessado em trabalhar junto ou quer apenas conversar? 
+              Interessado em trabalhar junto? 
               Me encontre nas plataformas abaixo.
             </p>
 
@@ -459,19 +460,8 @@ export default function Home() {
       <footer className="py-12 px-6 border-t border-apple-border">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-apple-text-tertiary">
-            © 2026 Izano. Desenvolvido com Next.js & Tailwind.
+            © 2026 Vinicius. Desenvolvido com Next.js & Tailwind.
           </p>
-          <div className="flex items-center gap-6">
-            {socialLinks.map((social) => (
-              <a
-                key={social.name}
-                href={social.href}
-                className="text-sm text-apple-text-tertiary hover:text-apple-text transition-colors"
-              >
-                {social.name}
-              </a>
-            ))}
-          </div>
         </div>
       </footer>
     </div>
