@@ -430,7 +430,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-semibold mb-4">Vamos nos Conectar</h2>
+            <h2 className="text-3xl md:text-4xl font-semibold mb-4">Vamos Nos Conectar</h2>
             <p className="text-apple-text-secondary mb-10">
               Interessado em trabalhar junto? 
               Me encontre nas plataformas abaixo.
@@ -460,7 +460,7 @@ export default function Home() {
       <footer className="py-12 px-6 border-t border-apple-border">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-apple-text-tertiary">
-            © 2026 Vinicius. Desenvolvido com Next.js & Tailwind.
+            © 2026 Vinicius. Desenvolvimento e eficiência.
           </p>
         </div>
       </footer>
