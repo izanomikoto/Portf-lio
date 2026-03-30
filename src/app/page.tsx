@@ -111,7 +111,7 @@ export default function Home() {
             className="text-xl font-semibold tracking-tight"
             whileHover={{ scale: 1.02 }}
           >
-            Vinicius - Izano
+            Vinicius
           </motion.a>
 
           {/* Desktop Nav */}
