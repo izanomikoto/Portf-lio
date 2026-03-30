@@ -387,24 +387,36 @@ export default function Home() {
 
       {/* About Section */}
       <section id="about" className="py-32 px-6">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="max-w-4xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
+            className="flex flex-col md:flex-row items-center gap-12"
           >
-            <h2 className="text-3xl md:text-4xl font-semibold mb-8">Sobre Mim</h2>
-            <p className="text-lg text-apple-text-secondary leading-relaxed mb-6">
-              Olá! Me chamo, Vinicius ou Izano no mundo das stacks.
-              Sou engenheiro de software e desenvolvedor. Com interesse por criar 
-              experiências digitais imersivas. Meu trabalho está entre 
-              desenvolvimento de jogos, aplicativos nativos e sistemas escaláveis.
-            </p>
-            <p className="text-lg text-apple-text-secondary leading-relaxed">
-              De arquitetura de sistemas de jogos distribuídos em Unity à criação de 
-              elegantes aplicativos macOS com SwiftUI, acredito no poder de combinar 
-              excelência técnica com design bonito, leve e escalável.
-            </p>
+            <div className="flex-shrink-0">
+              <div className="w-48 h-48 md:w-64 md:h-64 rounded-3xl overflow-hidden border-2 border-apple-border">
+                <img 
+                  src="/foto.jpeg" 
+                  alt="Vinicius" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div className="text-center md:text-left">
+              <h2 className="text-3xl md:text-4xl font-semibold mb-6">Sobre Mim</h2>
+              <p className="text-lg text-apple-text-secondary leading-relaxed mb-4">
+                Olá! Me chamo, Vinicius ou Izano no mundo das stacks.
+                Sou engenheiro de software e desenvolvedor. Com interesse por criar 
+                experiências digitais imersivas. Meu trabalho está entre 
+                desenvolvimento de jogos, aplicativos nativos e sistemas escaláveis.
+              </p>
+              <p className="text-lg text-apple-text-secondary leading-relaxed">
+                De arquitetura de sistemas de jogos distribuídos em Unity à criação de 
+                elegantes aplicativos macOS com SwiftUI, acredito no poder de combinar 
+                excelência técnica com design bonito, leve e escalável.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
