@@ -111,7 +111,7 @@ export default function Home() {
             className="text-xl font-semibold tracking-tight"
             whileHover={{ scale: 1.02 }}
           >
-            Izano
+            Vinicius - Izano
           </motion.a>
 
           {/* Desktop Nav */}
@@ -396,8 +396,8 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-semibold mb-8">Sobre Mim</h2>
             <p className="text-lg text-apple-text-secondary leading-relaxed mb-6">
               Olá! Me chamo, Vinicius ou Izano no mundo das stacks.
-              Sou engenheiro de software e desenvolvedor com paixão por criar 
-              experiências digitais imersivas. Meu trabalho está na interseção entre 
+              Sou engenheiro de software e desenvolvedor. Com interesse por criar 
+              experiências digitais imersivas. Meu trabalho está entre 
               desenvolvimento de jogos, aplicativos nativos e sistemas escaláveis.
             </p>
             <p className="text-lg text-apple-text-secondary leading-relaxed">
