@@ -11,13 +11,13 @@ import {
 
 const projects = [
   {
-    id: "shamayin",
-    title: "Crônicas de Shamayim",
-    subtitle: "RPG Fusão Hebraico-Asiático",
-    description: "Sistema RPG de alta fidelidade combinando misticismo hebraico com precisão asiática. Shell nativo Unity 6 com portal web Next.js. Sistemas distribuídos, sincronização em tempo real e construção de mundos 3D imersivos.",
+    id: "shamayim",
+    title: "Crônicas de Shamayim (CSI)",
+    subtitle: "RPG de Alta Fidelidade",
+    description: "Desenvolvimento de um RPG de alta fidelidade usando Unity 6 e C#. Arquitetura distribuída com .NET 9, Next.js 16 para o site, PostgreSQL para dados persistentes e Redis para cache. Foco em performance, escalabilidade e experiência imersiva.",
     tags: ["Unity 6", "C#", ".NET 9", "Next.js 16", "PostgreSQL", "Redis"],
     year: "2025",
-    role: "CEO - Arquiteto Principal",
+    role: "Engenheiro de Software Principal",
     icon: Layers,
     featured: true,
     stats: [
@@ -26,6 +26,23 @@ const projects = [
       { label: "Stack", value: "Full-Stack" }
     ],
     image: "/cronicas-de-shamayim.png"
+  },
+  {
+    id: "bot",
+    title: "Crônicas de Shamayim Bot (CSI)",
+    subtitle: "Bot da comunidade do servidor de Shamayim",
+    description: "Bot de comunidade para o servidor de Shamayim, desenvolvido em Node.js. Responde a perguntas sobre o jogo, fornece atualizações e interage com os jogadores para melhorar a experiência da comunidade.",
+    tags: ["Node.js", "Discord.js", "Comunidade", "Bot de Resposta", "Servidor de Jogo"],
+    year: "2023",
+    role: "Criador",
+    icon: Smartphone,
+    featured: false,
+    stats: [
+      { label: "Bot", value: "JS Server" },
+      { label: "Comunidade", value: "Discord" },
+      { label: "Objetivo", value: "Melhorar a experiência da comunidade" }
+    ],
+    image: "/bot.png"
   },
   {
     id: "izano",
@@ -59,16 +76,19 @@ const projects = [
       { label: "Áudio", value: "Processamento 40kHz" },
       { label: "Objetivo", value: "Clone de Voz" }
     ],
-    image: null
+    image: "/cromiun-sound.png"
   }
 ];
 
 const skills = [
   { category: "Desenvolvimento de Jogos", items: ["Unity 6", "C#", ".NET", "3D Graphics", "Physics"] },
   { category: "Web & Frontend", items: ["Next.js", "React", "TypeScript", "Framer Motion", "GLSL"] },
+  { category: "Discord Bots & Comunidade", items: ["Discord.js", "Bots de Resposta", "Engajamento Comunitário"] },
   { category: "Backend & Sistemas", items: ["Node.js", "Rust", "PostgreSQL", "Redis", "Sistemas Distribuídos"] },
   { category: "Apps Nativos", items: ["SwiftUI", "SwiftData", "macOS", "iOS", "Xcode"] },
   { category: "Áudio & IA", items: ["RVC", "ffmpeg", "Clone de Voz", "Processamento de Áudio"] },
+  { category: "Ferramentas & DevOps", items: ["Git", "Docker", "CI/CD", "AWS", "Linux"] },
+  { category: "Design & Criatividade", items: ["Figma", "Blender", "Adobe Suite", "Design de Interação"] },
 ];
 
 const socialLinks = [
@@ -179,7 +199,7 @@ export default function Home() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-apple-surface border border-apple-border text-sm text-apple-text-secondary mb-8"
           >
             <Lightbulb size={14} className="text-apple-accent" />
-            <span>Engenheiro de Software & Desenvolvedor</span>
+            <span>Engenheiro de Software & Game Developer</span>
           </motion.div>
 
           <motion.h1
@@ -407,10 +427,10 @@ export default function Home() {
             <div className="text-center md:text-left">
               <h2 className="text-3xl md:text-4xl font-semibold mb-6">Sobre Mim</h2>
               <p className="text-lg text-apple-text-secondary leading-relaxed mb-4">
-                Olá! Me chamo, Vinicius ou Izano no mundo das stacks.
-                Sou engenheiro de software e desenvolvedor. Com interesse por criar 
-                experiências digitais imersivas. Meu trabalho está entre 
-                desenvolvimento de jogos, aplicativos nativos e sistemas escaláveis.
+                Sou um engenheiro de software apaixonado por criar experiências digitais
+                que encantam e envolvem. Com uma sólida experiência em desenvolvimento de jogos,
+                aplicativos nativos e ferramentas inovadoras, busco constantemente novas formas de
+                combinar tecnologia e criatividade para resolver problemas complexos.
               </p>
               <p className="text-lg text-apple-text-secondary leading-relaxed">
                 De arquitetura de sistemas de jogos distribuídos em Unity à criação de 
