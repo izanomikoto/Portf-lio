@@ -12,7 +12,7 @@ import {
 const projects = [
   {
     id: "shamayin",
-    title: "Crônicas de Shamayin",
+    title: "Crônicas de Shamayim",
     subtitle: "RPG Fusão Hebraico-Asiático",
     description: "Sistema RPG de alta fidelidade combinando misticismo hebraico com precisão asiática. Shell nativo Unity 6 com portal web Next.js. Sistemas distribuídos, sincronização em tempo real e construção de mundos 3D imersivos.",
     tags: ["Unity 6", "C#", ".NET 9", "Next.js 16", "PostgreSQL", "Redis"],
@@ -25,7 +25,7 @@ const projects = [
       { label: "Arquitetura", value: "Distribuída" },
       { label: "Stack", value: "Full-Stack" }
     ],
-    image: null
+    image: "/cronicas-de-shamayim.png"
   },
   {
     id: "izano",
